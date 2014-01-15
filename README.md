@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 076852e3d071df6831b913c60f3d6827af6fbf59
 ## Basics
 
 Welcome to your Moovweb project! Moovweb is a great way to build a compelling front-end for a website. The files in this project describe the changes we want to make to the front end of a site. There's places in this project to add new images (assets/images/), styles (assets/stylesheets/) and even manipulate HTML (scripts/).
@@ -35,9 +38,12 @@ Remember to put all domains you're going to hit in your etc/hosts if you run you
 
 
     127.0.0.1   mlocal.igadgetcommerce.com
+<<<<<<< HEAD
 =======
 iGadgetCommerce
 ===============
 
 Building a Mobile Site, a Moovweb Training  Project
 >>>>>>> fbade47aa320caa5cbe55faa90723b5049bf8451
+=======
+>>>>>>> 076852e3d071df6831b913c60f3d6827af6fbf59

@@ -4,6 +4,7 @@ $base-font-size: 13px;
 $base-line-height: 24px;
 @include establish-baseline();
 
+<<<<<<< HEAD
 // colors
 $color1: #B03B01; // header color
 $color2: #075899; // link color
@@ -14,3 +15,5 @@ $color2: #075899; // link color
     color: $color2;
   }
 }
+=======
+>>>>>>> 076852e3d071df6831b913c60f3d6827af6fbf59
