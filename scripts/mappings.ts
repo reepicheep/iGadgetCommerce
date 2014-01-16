@@ -26,6 +26,17 @@ match($status) {
         log("--> No page match in mappings.ts")
       }
     }
+
+    match($path) {
+      with(/shop/) {
+        log("--> Importing pages/category.ts in mappings.ts")
+        @import pages/category.ts
+      }
+      else() {
+        log("--> No page match in mappings.ts")
+      }
+    }
+
   }
 
   else() {
