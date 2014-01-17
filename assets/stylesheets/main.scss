@@ -2,7 +2,8 @@
 // @import "globals/_reset";
 
 // Import Sprites
-@import "globals/_sprites";
+@import "globals/_sprites.scss";
+@import "globals/_buttons.scss";
 
 // Import Bourbon
 @import "globals/bourbon/_bourbon.scss";
