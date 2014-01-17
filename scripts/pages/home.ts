@@ -1,4 +1,4 @@
 # Place holder/example file
-$(".body") {
+$$("body") {
   add_class("mw_home")
 }

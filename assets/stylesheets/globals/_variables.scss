@@ -1,16 +1,185 @@
-
 // Vertical Rhythm
 $base-font-size: 13px;
 $base-line-height: 24px;
 @include establish-baseline();
 
-// colors
-$color1: #B03B01; // header color
-$color2: #075899; // link color
+// This is your library of variables that hold your color scheme and basic
+// styles for your fonts, borders, gradients and headers.
 
-#Header {
-  background: $color1;
-  a {
-    color: $color2;
+// colors
+$color1: #6A2F0D; // brown
+$color2: #6a1802; // maroon
+$color3: #FF8C2F; // orange
+$color4: white;
+$color5: #075899; // blue
+$color6: #C7D7DB; // blue gray
+$color7: #606263; // darker gray
+$color8: #D74401; //header border color
+
+// background colors
+$background1: #FCF5AA;
+$background2: #f2f4f7;
+$background3: #e7ebf0;
+$background4: #fff;
+$background5: #C14102; // header background top
+$background6: #852201; //header background bottom
+
+// fonts
+$font_size: 13px;
+$line_height: 24px;
+$font_family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+$text_color: #333;
+
+// header sizes
+$h1_size: $font_size + 9px;
+$h2_size: $font_size + 6px;
+$h3_size: $font_size + 3px;
+
+// borders
+$border1: 1px solid shade($color1, 60%);
+$border2: 1px solid #CDCDCD;
+$border3: 1px solid shade($color3, 50%);
+$border4: 1px solid $color8;
+
+// gradients
+$grad1: linear-gradient($color1 0, shade($color1, 40%) 100%);
+$grad3: linear-gradient($color3 0, shade($color3, 40%) 100%);
+$grad4: linear-gradient($background5 0, shade($background5, 20%) 100%);
+  //header top
+$grad2: linear-gradient($background6 0, shade($background6, 20%) 100%);
+  //header bottom
+
+// spacing
+$spacing: 10px;
+
+// border radius
+$border_radius: 5px;
+
+// text shadow
+$text_shadow: 0 -1px rgba(0,0,0,0.9);
+$box_shadow: 0 1px 3px rgba(0,0,0,0.9), 0 -1px 2px rgba(250,250,250,0.8);
+
+// This is your library of useful mixins and classes that you'll be using throughout your site.
+
+// gradients
+@mixin grad_base {
+  padding: $spacing;
+  font-weight: bold;
+  color: $color4;
+  text-shadow: $text_shadow;
+}
+
+@mixin grad1 {
+  @include grad_base;
+  @include background($grad4);
+  border-top: $border4;
+  padding: 0;
+}
+
+// buttons
+@mixin button_base {
+  display: block;
+  cursor: pointer;
+  width: auto;
+  margin: $spacing;
+  padding: $spacing;
+  line-height: 1.4;
+  font-family: $font_family;
+  font-size: $font_size;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: $border_radius;
+  @include transition(opacity, 0.2s, ease-out);
+  &:hover, &:active {
+    opacity: 0.9;
+    @include transition(opacity, 0.2s, ease-in);
   }
 }
+
+@mixin btn1 {
+  @include button_base;
+  position: relative;
+  min-width: 120px;
+  min-height: 20px;
+  background-color: $background6;
+  border: $border1;
+  color: $color4;
+  @include box-shadow($box_shadow);
+  text-shadow: $text_shadow;
+  font-size: $h3_size;
+  font-weight: normal;
+  a {
+    display: block;
+    color: $color4 !important;
+    text-decoration: none !important;
+  }
+  input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 !important;
+  }
+}
+
+@mixin btn2 {
+  @include btn1;
+  float: right;
+  min-width: 80px;
+  min-height: 20px;
+}
+
+.mw_btn1 {
+  @include btn1;
+}
+
+.mw_btn2 {
+  @include btn2;
+}
+
+// headings
+@mixin mw_h1 {
+  font-size: $h1_size;
+  color: $color4;
+  font-weight: normal;
+  text-shadow: $text_shadow;
+}
+
+.mw_h1 {
+  @include mw_h1;
+}
+
+// bars
+@mixin bar_inner_base {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: $spacing;
+  line-height: 1.4;
+  font-size: $h3_size;
+  font-weight: bold;
+}
+
+@mixin bar1 {
+  @include bar_inner_base;
+  @include background($grad2);
+  border-top: 1px solid $color2;
+  min-height: 40px;
+  padding: 0px;
+  color: $color4;
+  text-decoration: none;
+  a {
+    color: $color4;
+    padding: $spacing;
+  }
+}
+
+.mw_bar1 {
+  @include bar1;
+}
+
+// Box Shadow
+$box_shadow: 0 1px 3px rgba(0,0,0,0.9), 0 -1px 2px rgba(250,250,250,0.8);
