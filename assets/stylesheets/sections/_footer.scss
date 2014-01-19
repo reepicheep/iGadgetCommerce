@@ -1,3 +1,27 @@
-footer._footer {
-
+#Footer {
+  @include bar1;
+  font-size: 11px;
+  min-height: 116px;
+  .mw_footer_before {
+    .mw_footer_data {
+      span {
+        display: block;
+        text-align: center;
+        line-height: 0.3;
+        &:first-child {
+          margin-top: 30px;
+        }
+        &:nth-of-type(3) {
+          padding-top: 6px;
+        }
+        &:last-child {
+          text-transform:uppercase;
+          font-weight: bolder;
+          font-style: italic;
+          font-size: 130%;
+          line-height: 0.1;
+        }
+      }
+    }
+  }
 }

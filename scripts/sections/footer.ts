@@ -1,5 +1,8 @@
-# $("./body") {
-#   insert_bottom("footer", class: "_footer") {
-#     Move stuff here
-#   }
-# }
+$("./body") {
+  $$("#Footer") {
+    $$("> p") {
+      inject_before(read("footer.html"))
+    }
+    remove(".//p")
+  }
+}
