@@ -1,4 +1,3 @@
-# Place holder/example file
-// $$("body") {
-//   add_class("mw_home")
-// }
+$("/html/body") {
+  add_class("_home")
+}

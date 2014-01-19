@@ -30,6 +30,6 @@ $("./body") {
   remove(".//div[@id='AjaxLoading']")
   remove(".//div[@id='TopMenu']")
   remove(".//div[@id='Menu']")
-  remove(".//div[@id='LayoutColumn1']")
+  remove(".//div[@id='SideNewsletterBox']")
   remove(".//span[@class='FeedLink FloatRight']//ancestor::h2")
 }
