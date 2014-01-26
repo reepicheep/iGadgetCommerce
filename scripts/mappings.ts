@@ -28,7 +28,7 @@ match($status) {
       }
       with(/sample-product/) {
         log("--> Importing pages/product.ts in mappings.ts")
-      @import "pages/product.ts"
+      @import pages/product.ts
 }
       else() {
         log("--> No page match in mappings.ts")

@@ -1,5 +1,48 @@
-// Every page should have a class on the body
-// Scope that in each file at the start
+  // Every page should have a class on the body
+  // Scope that in each file at the start
 body._product {
-
+  .ProductMain {
+   border: 1px solid #DCDDDE;
+    padding: 10px;
+    background: #F2F4F7;
+    border-radius: 4px;
+  }
+  .DetailRow {
+    @include flexbox;
+    div.Value {
+      margin-left: 6px;
+    }
+  }
+  input[type='submit'] {
+    width: 126px;
+    height: 30px;
+    opacity: 1;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  .buttons-AddCartButton, .buttons-WriteReview {
+    text-indent: -9999px;
+  }
+  .buttons-WriteReview {
+    margin-bottom: 12px;
+  }
+  .ProductDescriptionContainer {
+    p {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .Content {
+    .FindByCategory {
+      ul {
+        margin: 0px;
+        background-color: #e5f8ff;
+        padding: 7px 10px;
+        border: 1px solid #ccebf7;
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
