@@ -2,7 +2,7 @@
   // Scope that in each file at the start
 body._product {
   .ProductMain {
-   border: 1px solid #DCDDDE;
+    border: 1px solid #DCDDDE;
     padding: 10px;
     background: #F2F4F7;
     border-radius: 4px;
@@ -42,6 +42,14 @@ body._product {
         padding: 7px 10px;
         border: 1px solid #ccebf7;
         margin-bottom: 5px;
+        li:first-child {
+          font-weight: bolder;
+          font-size: 15px;
+        }
+        li:last-child {
+          padding: 8px 22px 4px 22px;
+          background: image-url('SubCategory.gif') no-repeat 0 center;
+        }
       }
     }
   }

@@ -59,4 +59,49 @@ body.mw_category {
       }
     }
   }
+  .Content {
+    background: none;
+    padding-top: 0;
+    a {
+      color: $color5;
+    }
+    .SubCategoryList {
+      margin-top: 20px;
+      background: #EEF5F9;
+      ul{
+        list-style: none;
+        margin-left: 0;
+        li {
+          margin-bottom: 4px;
+          padding: 10px 30px;
+          background: image-url('SubCategory.gif') no-repeat 8px center;
+        }
+      }
+    }
+    .SortBox {
+      background: #812600;
+      border: 1px solid #5f0f02;
+      font-weight: bold;
+      padding: 12px 3px 9px 10px;
+      margin: 0;
+      color: $background4;
+      background: image-url("ok.png") no-repeat 95% center #812600;
+      //@extend .sprites-ok;
+      border-radius: $border_radius;
+      select {
+        background: $background5;
+        border: solid  1px #000;
+        color: $background4;
+        font-size: 14px;
+        vertical-align: middle;
+        margin-left: 5px;
+        margin-top: 0px;
+        padding-top: 5px;
+        text-align: right;
+        option {
+          text-align: right;
+        }
+      }
+    }
+  }
 }

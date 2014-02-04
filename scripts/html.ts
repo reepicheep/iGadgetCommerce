@@ -5,19 +5,21 @@ $("/html") {
   absolutize_srcs()
 
 
-  # Add the mobile meta tags
+# Add the mobile meta tags
   clean_mobile_meta_tags()
 
 
-  # Needed to begin mobilizing
+# Needed to begin mobilizing
   remove_all_styles()
 # remove_scripts()
   remove_html_comments()
 
-  # Late load all the images on the site
-  # lateload()
+# Late load all the images on the site
+# lateload()
 
-
+  $(".//div[@class='ProductActionAdd']") {
+    remove()
+  }
 
 
   add_assets()
