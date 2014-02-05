@@ -1,5 +1,14 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
 body._home {
-
+  #Wrapper {
+    #LayoutColumn2 {
+      padding-bottom: 0;
+      .ProductList {
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
